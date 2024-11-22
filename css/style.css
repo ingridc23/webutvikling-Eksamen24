@@ -1,0 +1,193 @@
+/* feller alle siden */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: black;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+
+header{
+ flex-direction: column;
+ justify-content: center;
+ 
+ 
+
+
+}
+
+
+#logo{
+
+    font-size: 40px;
+    font-style: inherit;
+}
+#søkefelt{
+    display: flex;
+    flex: content;
+    margin: 1rem;
+
+ 
+
+    
+}
+
+#søk, #search{
+    background-color: #fff;
+    padding: 0.5rem;
+    
+}
+
+
+nav ul{
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+
+nav ul li{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+h1, h2, {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3{
+    font-size: 28px;
+}
+
+
+.produktkort{
+    display: flex;
+    flex: content;
+    
+
+    
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: flex-end;
+}
+
+.produktkort img{
+    width: 80%;
+    margin: 1rem;
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+}
+/* rette på ikonene?  gap */
+
+b{
+    padding: 1rem;
+}
+
+
+
+footer nav ul li{
+    display: flex;
+    flex-direction: row;
+}
+
+/* første side */
+
+h1{
+    font-size: 45px;
+}
+ 
+#banner{
+    /* sette inn bilde */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: ;
+    background-color: #e0dbdb;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: end;
+    border-radius: 15px;
+
+}
+
+
+#pakke{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffffffbb;
+    padding: 1rem  1rem 1rem 0rem;
+    width: 50%;
+    border-radius: 10px;
+    text-align: end;
+
+}
+
+
+#valg{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.alternativ{
+    
+    border: solid;
+    margin: 1rem;
+    border-radius: 10px;
+    
+}
+
+#produktområde{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#kategorier{
+
+
+}
+
+.Category{
+
+    border: solid;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
