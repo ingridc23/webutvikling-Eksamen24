@@ -4,9 +4,9 @@ body{
 
     color: black;
     display: flex;
-    margin: 0;
     flex-wrap: wrap;
     font-size: 24px;
+    
 }
 
 header{
@@ -26,18 +26,34 @@ header{
 }
 #søkefelt{
     display: flex;
-    flex: content;
+    flex-direction: row;
     margin: 1rem;
-
  
+ align-items: baseline;
 
     
 }
-
-#søk, #search{
+#søk{
+    display: flex;
+    padding: 1rem;
+    font-size: 24px;
     background-color: #fff;
-    padding: 0.5rem;
     
+}
+#search{
+    background-color: #fff;
+    padding: 1rem;
+    margin: ;
+    border-radius: 10px;
+}
+
+
+#pasonlig{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    font-size: 40px;
 }
 
 
@@ -54,9 +70,10 @@ nav ul li{
     padding: 1rem;
 }
 
-h1, h2, {
+h1, h2 {
     display: flex;
     justify-content: center;
+    text-align: center;
 
 }
 
@@ -69,6 +86,7 @@ a{
 main{
     display: flex;
     flex-wrap: wrap;
+    margin: 1rem;
 }
 
 h3{
@@ -95,25 +113,24 @@ h3{
 }
 
 
-
-
-
-
-
-
-
-
 footer{
     display: flex;
     flex-direction: column;
-
+    border-style: solid hidden hidden hidden ;
+    border-color: #999999;
+    margin: 1rem;
 }
+
 /* rette på ikonene?  gap */
 
 b{
     padding: 1rem;
 }
 
+#kontakt{
+    align-items: baseline;
+}
+    
 
 
 footer nav ul li{
@@ -174,17 +191,102 @@ h1{
 }
 
 #kategorier{
-
+    list-style: none;
+    gap: 1rem;
 
 }
 
 .Category{
+    display: flex;
+    justify-content: center;
 
     border: solid;
     padding: 1rem;
     border-radius: 10px;
+    margin: 1rem;
+}
+
+.review{
+    border: solid, #999999;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
 
 }
+
+.review img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 1rem;
+    
+
+}
+
+/* produktsiden */
+
+#fotspor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#fotspor li a{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+
+#produkt{
+    margin: 2rem;
+    
+}
+
+#produkt img{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    gap: 1rem;
+    width: 90%;
+    border-radius: 15px;
+}
+
+#omprodukt{
+    padding: 1rem;
+}
+
+#merke{
+    text-decoration: underline;
+    border: hidden hidden solid hidden;
+    
+
+}
+
+/* handlesiden */
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label input{
+    font-size: 24px;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+#lager{
+    background-color: #999999;
+    color: #fff;
+    font-size: 25px;
+    padding: 1rem;
+    width: 40%;
+    margin: 1rem;
+}
+
 
 
 

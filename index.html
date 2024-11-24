@@ -15,17 +15,18 @@
         <!-- hust ex... -->
         <form action="example.php" id="søkefelt">
             <label for="search">
-                <input type="search" name="search" id="search">
+                <input type="search" name="search" id="search" placeholder="søk her">
+            </label> <label for="søk">
+                <button id="søk" ><i class="fa-solid fa-magnifying-glass"></i></button>
             </label>
-            <label for="søk"><input type="button" id="søk" value="søk"></label>
-            </form>
+            </form>     
         <nav>
             
             <ul>
                 <!-- linK alle a teggene -->
                 <li><a href="#">Hjem</a></li>
                 <li><a href="product.html">Produkt</a></li>
-                <li><samp><a href="#">logo</a></samp></li>
+                <li><a href="index.html" id="logo">Logo</a></li>
                 <li><a href="#">katerorier</a></li>
                 <li><a href="#">Kontakt oss</a></li>
             </ul>
@@ -33,7 +34,7 @@
         </nav>
         <!-- endr lu til ul -->
         <nav>
-            <ul>
+            <ul id="pasonlig">
                 <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
                 <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -48,20 +49,19 @@
             <p>But despite all its benefits, seeing the same random Latin text in every design can get a little boring for you and your clients.</p>
             <a href="#" id="pakke" >Få en prøve pakken nå</a>
         </article>
-        </section>
         
-            <article >
-          <!-- artion ? -->
-                <h2>Våres mest populære produkter</h2>
-                <p>opptak det beste av det beste</p>
-                <nav>
-                <ul id="valg">
-                    <li class="alternativ"><a  href="#">New product</a></li>
-                    <li class="alternativ"><a  href="#">Special product </a></li>
-                    <li class="alternativ"><a  href="#">Best selleing </a></li>
-                </ul>
-                </nav>
-            </article>
+        
+        <article >
+            <h2>Våres mest populære produkter</h2>
+            <p>opptak det beste av det beste</p>
+            <nav>
+            <ul id="valg">
+                <li class="alternativ"><a  href="#">New product</a></li>                    <li class="alternativ"><a  href="#">Special product </a></li>
+                <li class="alternativ"><a  href="#">Best selleing </a></li>
+            </ul>
+            </nav>
+        </article>
+
         <section id="produktområde">
             <article class="produktkort">
                 <a href="product.html">
@@ -70,6 +70,29 @@
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
                 <p class="prist"> 1999kr </p>
+                <!-- reting? -->
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews</a>
+            </article>
+            <article class="produktkort">
+                <a href="product.html">
+                <!-- link bilder + deskeriv -->
+                <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden">
+                <!-- linker er i dokumentet -->
+                <h3>produkt navn</h3>
+                <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews<!-- reting? --></a>
+            </article>
+            <article class="produktkort">
+                <a href="product.html">
+                <!-- link bilder + deskeriv -->
+                <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden">
+                <!-- linker er i dokumentet -->
+                <h3>produkt navn</h3>
+                <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
             <article class="produktkort">
@@ -79,6 +102,8 @@
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
                 <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
             <article class="produktkort">
@@ -88,6 +113,8 @@
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
                 <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
             <article class="produktkort">
@@ -97,24 +124,8 @@
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
                 <p class="prist"> 1999kr </p>
-                <!-- reting? --></a>
-            </article>
-            <article class="produktkort">
-                <a href="product.html">
-                <!-- link bilder + deskeriv -->
-                <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden">
-                <!-- linker er i dokumentet -->
-                <h3>produkt navn</h3>
-                <p class="prist"> 1999kr </p>
-                <!-- reting? --></a>
-            </article>
-            <article class="produktkort">
-                <a href="product.html">
-                <!-- link bilder + deskeriv -->
-                <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden">
-                <!-- linker er i dokumentet -->
-                <h3>produkt navn</h3>
-                <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
             <!--husk når bilde er på plass 6x -->
@@ -124,25 +135,50 @@
               <h2>Våres mest populære kategorier</h2>
               <p>opptak det beste av det beste</p>
             </article>
+            <ul id="kategorier">
+                <li class="Category"><a  href="#"><h3>Category 1</h3></a></li>
+                <li class="Category"><a  href="#"><h3>Category 2</h3></a></li>
+                <li class="Category"><a  href="#"><h3>Category 3</h3></a></li>
+                <li class="Category"><a  href="#"><h3>Category 4</h3></a></li>
+                <li class="Category"><a  href="#"><h3>Category 5</h3></a></li>
 
-            <section id="kategorier">
-                
-                <!-- del med atrtikol? -->
-                <a class="Category" href="#"><h3>Category 1</h3></a>
-                <a class="Category" href="#"><h3>Category 1</h3></a>
-                <a class="Category" href="#"><h3>Category 1</h3></a>
-                <a class="Category" href="#"><h3>Category 1</h3></a>
+            </ul>
 
-            </section>
+
         </section>
         <section>
             <h2>Anmeldelser</h2> 
 
-            <article>
+            <article class="review">
                 <!-- link bilder + deskeriv -->
-                <img src="#" alt="noe">
+                <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="en svart hund, som ser opp mot kamra. hunder er tred gullv">
                 <h3>navn</h3>
-                <p>If you’ve ever come near a design mockup, you’re likely familiar with lorem ipsum, the random text used as placeholder copy in designs. Lorem ipsum is a useful tool, but can be a bit dry. Luckily, there are dozens of funny lorem ipsum generators out there, to help add some flavor to your mockups. </p>
+                <p>If you’ve ever come near a design mockup, you’re likely familiar with lorem ipsum, the random text used as placeholder copy in designs. Lorem ipsum is a useful tool, but can be a bit dry. </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                <!-- reting? -->
+            </article>
+            <article class="review">
+                <!-- link bilder + deskeriv -->
+                <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="en svart hund, som ser opp mot kamra. hunder er tred gullv">
+                <h3>navn</h3>
+                <p>If you’ve ever come near a design mockup, you’re likely familiar with lorem ipsum, the random text used as placeholder copy in designs. Lorem ipsum is a useful tool, but can be a bit dry. </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                <!-- reting? -->
+            </article>
+            <article class="review">
+                <!-- link bilder + deskeriv -->
+                <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="en svart hund, som ser opp mot kamra. hunder er tred gullv">
+                <h3>navn</h3>
+                <p>If you’ve ever come near a design mockup, you’re likely familiar with lorem ipsum, the random text used as placeholder copy in designs. Lorem ipsum is a useful tool, but can be a bit dry. </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                <!-- reting? -->
+            </article>
+            <article class="review">
+                <!-- link bilder + deskeriv -->
+                <img src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U" alt="en svart hund, som ser opp mot kamra. hunder er tred gullv">
+                <h3>navn</h3>
+                <p>If you’ve ever come near a design mockup, you’re likely familiar with lorem ipsum, the random text used as placeholder copy in designs. Lorem ipsum is a useful tool, but can be a bit dry. </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                 <!-- reting? -->
             </article>
             <!--husk når bilde er på plass 4x -->

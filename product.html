@@ -28,14 +28,15 @@
                 <li><a href="product.html">Produkt</a></li>
                 <li><a href="index.html" id="logo">Logo</a></li>
                 <li><a href="index.html">katerorier</a></li>
-                <li><a href="index.html">Kontakt oss</a></li>
+                <li><a href="index.html#logo_f">Kontakt oss</a></li>
+                <!-- fungsjon her -->
             </ul>
 
         </nav>
 
         <nav>
-            <ul>
-                <!-- putt in ikonene -->
+            <ul id="pasonlig">
+                <!-- putt in ikonene gjør dem støre bærekreft -->
                 <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
                 <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -44,26 +45,27 @@
 
     </header>
     <main>
-        <nav id="fotspor">
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="#">Produkt valg</a></li>
+        <nav >
+            <ul id="fotspor">
+                <li><a href="index.html">Hjem <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="index.html#kategorier">kategori <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="#">Produkt valg </a></li>
             </ul>
         </nav>
         <section id="produkt">
-
+            <h1>Produkter</h1>
             <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden"> 
             <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden"> 
             <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden"> 
             <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden"> 
             <!-- 4X -->
-             <article> 
+             <article id="omprodukt">  
                 <!-- se opp h1 og h2 -->
-                <h1>Produkter</h1>
-                <a href="#">merke navn</a>
+                 <h2>produkt navn</h2>
+                <a href="#" id="merke">MERKNAVN</a>
                 <p>1999kr</p>
-                <p>farge </p>
-                <a href="checkout.html">Legg i handlekurv</a>
+                <p>farge: <b>beige</b></p>
+                <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i> Legg i handlekurv </a>
              </article>
         </section>
         <section>
@@ -75,6 +77,8 @@
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
                 <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
             <article class="produktkort">
@@ -84,6 +88,8 @@
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
                 <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
             <article class="produktkort">
@@ -93,6 +99,8 @@
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
                 <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
             <article class="produktkort">
@@ -102,6 +110,8 @@
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
                 <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
             <article class="produktkort">
@@ -111,6 +121,8 @@
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
                 <p class="prist"> 1999kr </p>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
             <article class="produktkort">
@@ -119,7 +131,9 @@
                 <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden">
                 <!-- linker er i dokumentet -->
                 <h3>produkt navn</h3>
-                <p class="prist"> 1999kr </p>
+                <p class="prist"> 1999kr </p>                
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                Reviews
                 <!-- reting? --></a>
             </article>
         </section>
@@ -131,7 +145,7 @@
         <h2 id="logo_f">logo</h2>
         <p>pleshodere</p>
         
-        <nav>
+        <nav >
             <h3>Kontakt</h3>
             <ul>
                 <!-- putt in ikonene -->
