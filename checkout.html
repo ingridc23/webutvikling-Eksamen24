@@ -11,22 +11,21 @@
     <title>Forsiden</title>
 </head>
 <body>
-    <div id="grid">
+    <div id="grid-container">
     <header>
         <!-- hust ex... -->
         <form action="example.php" id="søkefelt">
         <label for="search"></label><label for="søk"></label>
             <input type="search" name="search" id="search" placeholder="søk her">
             <button id="søk" ><i class="fa-solid fa-magnifying-glass"></i></button>
-        
         </form>
         <nav>
             <ul >
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="product.html">Produkt</a></li>
+                <li><a href="index.html#valg">Produkt</a></li>
                 <li><a href="index.html" id="logo">Logo</a></li>
-                <li><a href="index.html">katerorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
+                <li><a href="index.html#kategorier">katerorier</a></li>
+                <li><a href="index.html#Kontakt">Kontakt oss</a></li>
             </ul>
 
         </nav>
@@ -43,61 +42,64 @@
     </header>
     <main>
         <h1>kasse</h1>
-        <section>
+        <section id="Shoppingbagen">
             <h2>1.Shoppingbagen</h2>
-            <article class="produktkort" >
-                <a href="product.html" >
+            <article class="produktkort">
+                <a href="product.html" class="valgt" >
                 <!-- link bilder + deskeriv -->
                 <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden">
                 <!-- linker er i dokumentet -->
+                 <div class="omprodukt">
                 <h3>produkt navn</h3>
-                <p class="prist"> 1999kr </p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-                Reviews
-                <!-- reting? --></a>
+                <p > 1999kr </p>
+
+                </div>
+                </a>
             </article>
             <article class="produktkort">
-                <a href="product.html">
-                 <!-- link bilder + deskeriv  -->
+                <a href="product.html" class="valgt" >
+                <!-- link bilder + deskeriv -->
                 <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden">
                 <!-- linker er i dokumentet -->
+                 <div class="omprodukt">
                 <h3>produkt navn</h3>
-                <p class="prist"> 1999kr </p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-                Reviews
-                <!-- reting? --></a>
+                <p > 1999kr </p>
+
+                </div>
+                </a>
             </article>
             <article class="produktkort">
-                <a href="product.html">
-                 <!-- link bilder + deskeriv  -->
+                <a href="product.html" class="valgt" >
+                <!-- link bilder + deskeriv -->
                 <img src="bilder/klokke.jpg" alt="en gullklokke som man har ront hånden">
                 <!-- linker er i dokumentet -->
+                 <div class="omprodukt">
                 <h3>produkt navn</h3>
-                <p class="prist"> 1999kr </p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-                Reviews
-                <!-- reting? --></a>
+                <p > 1999kr </p>
+
+                </div>
+                </a>
             </article>
         </section>
-        <section>
+        <section >
             <h2>2. Dine opplysninger</h2>
             <h3>Leveringsadresse</h3>
-            <form action="example.php">
-                <label for="fornavn">
-                    <!-- søk om reqiured -->
-                    <input id="fornavn" type="text" placeholder="Fornavn*"  >
+            <form action="example.php" class="skjema">
+                <label for="fornavn" class="uner">
+                    Fornavn
+                    <input id="fornavn" type="text" class="hal" placeholder="Fornavn*"  >
                 </label>
 
-                <label for="etternavn">
-                    <input id="etternavn" type="text" placeholder="Etternavn*" >
+                <label for="etternavn" class="uner">Etternavn
+                    <input id="etternavn" type="text" class="hal" placeholder="Etternavn*" >
                 </label>
-                <label for="gateadresse">
-                    <input id="gateadresse" type="text" placeholder="Gateadresse*">
+                <label for="gateadresse" class="uner">Gateadresse
+                    <input id="gateadresse" class="hel"  type="text" placeholder="Gateadresse*">
                 </label>
-                <label for="postnummer">
-                    <input id="postnummer" type="number" placeholder="Postnummer*" min="0000" max="9999">
+                <label for="postnummer" class="uner">Postnummer
+                    <input id="postnummer" type="number" class="hal" placeholder="Postnummer*" min="0000" max="9999">
                 </label>
-                <label for="poststed">
+                <label for="poststed" class="uner">Poststed
                     <input id="poststed" type="text" placeholder="Poststed*">
                 </label>
                 <input type="button" value="Lagre" id="lager">
@@ -107,7 +109,7 @@
         <section>
             <h2>3. Levering </h2>
             
-            <form action="example.php">
+            <form action="example.php" class="avhuking">
                 <h3>LEVERRIGSALG</h3>
                 <label for="Express_Hjem">
                 <input type="radio" value="Express Hjemleveing" id="Express_Hjem" name="Levering"> Express Hjemleveing
@@ -120,23 +122,24 @@
                 </label>
             </form>
         </section>
-        <section>
+        <section >
             <h2>4. Betalig</h2>
             <h3>betal men kort</h3>
-            <form>
+            <form action="example.php" class="skjema">
 
-                <label for="kortnummer">Kortnummer
-                <input type="number" id="kortnummer" placeholder="372344****2285" name="Betalig">
+                <label for="kortnummer" class="uner">Kortnummer
+                <input type="number" id="kortnummer" class="hel" placeholder="372344****2285" name="Betalig">
                 </label>
-                <label for="Utløpsdato" >Utløpsdato
+                <label for="Utløpsdato" class="uner">Utløpsdato
                     <input type="date" id="Utløpsdato" name="Betalig">
                 </label>
-                <label for="cvc/cvv">CVC/CVV
+                <label for="cvc/cvv" class="uner">CVC/CVV
                     <input type="number" id="cvc/cvv" name="Betalig" placeholder="CVC/CVV">
                 </label>
             </form>
             <article>
                 <p>Å betale inkl. mva. 1199kr</p>
+                <form action="example.php" class="avhuking">
                 <label for="Fullfør">
                     <input type="button" id="Fullfør" value="Fullfør kjøp">
                 </label>
@@ -144,49 +147,53 @@
                 <label for="nyhetbrev">
                     <input type="checkbox" id="nyhetbrev" name="nyhetbrev">ja takk! Send nyhetbrev til meg.
                 </label>
-                <label for="tekstmedinger">
+                <label for="tekstmedinger" >
                     <input type="checkbox" id="tekstmedinger" name="tekstmedinger"> jeg ønsker å motta tekstmedinger med til bud og nyheter.
                 </label>
+            </form>
             </article>
 
         </section>
 
     </main>
     <footer>
-
-        <!-- lesse oppgevt tert seksjon -->
-        <h2 id="logo_f">logo</h2>
-        <p>pleshodere</p>
+        <!-- koper  -->
+                <!-- lesse oppgevt tert seksjon -->
+                 <article>
+                <h2 id="logo_f">logo</h2>
+                <p>If you’ve ever come near a design mockup, you’re likely familiar with lorem ipsum, the random text used as placeholder copy in designs. </p>
+                </article>
+                <section>
+                <nav>
+                    <h3>Kontakt</h3>
+                    <ul id="Kontakt">
+                        <!-- putt in ikonene -->
+                        <li c><i class="fa-solid fa-location-dot"> </i> <b>Adresse:</b><p>B R A Veien 4, 1757 Haldn</p></li>
+                        <li><i class="fa-solid fa-phone"></i> <b>Telefon:</b><p>69 60 80 00</p></li>
+                        <li><i class="fa-solid fa-envelope"> </i><b>E-post:</b><p>halden@hiof.no</p></li>
+                        <li><i class="fa-solid fa-clock"> </i> <b>Åpningstder:</b><p> Srenger 15.00</p></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>SNARVEIE</h3>
+                    <ul>
+                            <li><a href="product.html">Produkt</a></li>
+                            <li><a href="index.html">katerorier</a></li>
+                            <li><a href="#">Kontakt oss</a></li>
         
-        <nav>
-            <h3>Kontakt</h3>
-            <ul id="Kontakt">
-                <!-- putt in ikonene -->
-                <li><i class="fa-solid fa-location-dot"> </i> <b>Adresse:</b><p>B R A Veien 4, 1757 Haldn</p></li>
-                <li><i class="fa-solid fa-phone"></i> <b>Telefon:</b><p>69 60 80 00</p></li>
-                <li><i class="fa-solid fa-envelope"> </i><b>E-post:</b><p>halden@hiof.no</p></li>
-                <li><i class="fa-solid fa-clock"> </i> <b>Åpningstder:</b><p> Srenger 15.00</p></li>
-            </ul>
-        </nav>
-        <nav>
-            <h3>SNARVEIE</h3>
-            <ul>
-                <li><a href="product.html">Produkt</a></li>
-                <li><a href="index.html">katerorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <h3>SOSIALE MEDIER</h3>
-            <ul>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-facebook"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-                <li><i class="fa-brands fa-pinterest"></i></li>
-            </ul>
-        </nav>
-
-    </footer>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>SOSIALE MEDIER</h3>
+                    <ul id="sosialermeder">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-pinterest"></i></li>
+                    </ul>
+                </nav>
+                </section>
+            </footer>
 </div>
 </body>
 </html>

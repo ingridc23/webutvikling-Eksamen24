@@ -1,28 +1,31 @@
 /* feller alle siden */
 
 
+#grid-container{ 
+    display: grid;
+    grid-template-areas: "header" 
+                        "main" 
+                        "footer"; 
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 
     color: black;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 24px;
+    font-size: 15px;
     
 }
 
 header{
     display: flex;
-    grid-area: "heaer";
  flex-direction: column;
  justify-content: center;
  
- 
-
 
 }
-
-
 
 
 #logo{
@@ -34,8 +37,7 @@ header{
     display: flex;
     flex-direction: row;
     margin: 1rem;
- 
- align-items: baseline;
+    align-items: baseline;
 
     
 }
@@ -49,7 +51,6 @@ header{
 #search{
     background-color: #fff;
     padding: 1rem;
-    margin: ;
     border-radius: 10px;
 }
 
@@ -58,7 +59,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 100%;
     font-size: 40px;
 }
 
@@ -91,8 +92,9 @@ a{
 
 main{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 1rem;
+    justify-content: center;
 }
 
 h3{
@@ -103,10 +105,7 @@ h3{
 .produktkort{
     display: flex;
     flex: content;
-    
-
-    
-    margin: 1rem;
+    max-width: 350px;
     padding: 1rem;
     justify-content: flex-end;
 }
@@ -125,6 +124,7 @@ footer{
     border-style: solid hidden hidden hidden ;
     border-color: #999999;
     margin: 1rem;
+    justify-content: center;
 }
 
 /* rette på ikonene?  gap */
@@ -155,7 +155,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: ;
+    /* background-image: url();  */
     background-color: #e0dbdb;
     padding: 1rem;
     margin: 1rem;
@@ -176,11 +176,18 @@ h1{
 
 }
 
+.populær{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 
 #valg{
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
 }
 
 .alternativ{
@@ -194,22 +201,47 @@ h1{
 #produktområde{
     display: flex;
     flex-wrap: wrap;
-}
-
-#kategorier{
-    list-style: none;
-    gap: 1rem;
+    
 
 }
+
 
 .Category{
     display: flex;
     justify-content: center;
-
-    border: solid;
+    color: #fff;
     padding: 1rem;
-    border-radius: 10px;
     margin: 1rem;
+}
+
+#Category1{
+
+    background-image: url(../bilder/sko.jpg);
+
+}
+#Category2{
+
+    background-image: url(../bilder/cactus.jpg);
+
+}
+#Category3{
+    background-image: url(../bilder/slips.jpg);
+
+}
+
+#Category4{
+
+    background-image: url(../bilder/spillkontron.jpg);
+}
+
+#Category5{
+
+    background-image: url(../bilder/stol.jpg);
+}
+
+#Anmeldelser{
+    display: grid;
+    justify-content: center;
 }
 
 .review{
@@ -217,6 +249,7 @@ h1{
     border-radius: 10px;
     margin: 1rem;
     padding: 1rem;
+    max-width: 289px;
 
 }
 
@@ -225,8 +258,6 @@ h1{
     height: 150px;
     border-radius: 100%;
     margin: 1rem;
-    
-
 }
 
 /* produktsiden */
@@ -247,6 +278,8 @@ h1{
 
 
 #produkt{
+    display: flex;
+    flex-direction: column;
     margin: 2rem;
     
 }
@@ -256,13 +289,17 @@ h1{
     flex-wrap: wrap;
     margin: 1rem;
     gap: 1rem;
-    width: 90%;
     border-radius: 15px;
 }
 
-#omprodukt{
+
+
+.omprodukt{
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
 }
+
 
 #merke{
     text-decoration: underline;
@@ -271,10 +308,13 @@ h1{
 
 }
 
+
+
 /* handlesiden */
 form {
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -295,15 +335,244 @@ label input{
 
 /* til pc */
 
-@media  only screen and (min-width: 600px){
+@media only screen and (min-width: 800px){
+    /* felles med alle sinene */
 
-#grit{ 
+
+#grid-container{ 
     display: grid;
-    grid-template-columns:  "header header header" "main main main" "footer footer footer";
+    grid-template-areas: "header header header " 
+                        " . main . " 
+                        "footer footer footer "; 
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+
+header{
+    grid-area: header;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#søkefelt{
+    display: flex;
+
+}
+
+
+#search {
+    font-size: 15px;
+}
+
+#søk{
+    font-size: 20px;
+    padding: 0.8rem;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    
+li{
+    padding: 0;
+    align-items: baseline;
+
+}
+}
+
+
+#pasonlig{
+    flex-direction: row;
+    font-size: 20px;
+
+}
+
+main{
+grid-area: main;
+justify-content: center;
+
+
+}
+/* forsiden */
+
+.Category{
+    margin: 0;
+    padding: 2rem 1rem 2rem 1rem;
+} 
+ 
+#bok{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem ;
+
+}
+
+
+
+#Category1{
+    width: 30%;
+    background-image: url(../bilder/sko.jpg);
+
+}
+#Category2{
+    width: 25%;
+    background-image: url(../bilder/cactus.jpg);
+
+}
+#Category3{
+    width: 30%;
+    background-image: url(../bilder/slips.jpg);
+
+}
+
+#Category4{
+    width: 60%;
+    background-image: url(../bilder/cactus.jpg);
+}
+
+#Category5{
+    width: 30%;
+    background-image: url(../bilder/klokke.jpg);
+}
+
+#Anmeldelser{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.produktkort{
+    max-width:  30%;
+}
+
+/* produtsiden */
+#produkt{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+
+}
+
+#produkt section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+}
+#produkt img{
+    margin: 2px;
+}
+
+#hovedbilde{
+    display: flex;
+    flex-grow: 2;
+    width: 100%;
+    margin: 0;
+
+}
+
+#små1{
+    width: 160px;
+    flex-grow: 1;
+
+}
+#små2{
+    width: 160px;
+    flex-grow: 1;
+
+}
+#små3{
+    width: 160px;
+    flex-grow: 1;
+
+}
+
+
+
+#Lignende{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* kasse */
+
+#Shoppingbagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valgt{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.skjema{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+}
+
+.uner{
+    display: flex;
+    flex-direction: column;
     
 }
+.hal{
+    width: 400px;
+}
+.hel{
+    width: 1000px;
+}
+
+.avhuking{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 
+
+footer{
+    grid-area: footer;
+
+}
+footer p{
+    text-align: center;
+    margin: 1rem;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#sosialermeder{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+
+}
+
+#Kontakt li{
+    align-items: baseline;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin: 0;
+}
+
+
+
+}
 
 
